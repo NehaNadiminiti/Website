@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Joke Website</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the Joke Website</h1>
+        <p>Laugh your heart out!</p>
+    </header>
+
+    <!-- Joke Section with Background Image -->
+    <section class="joke-section" style="background-image: url('background.jpg');">
+        <div>
+            <h2>Joke of the Day</h2>
+            <p id="joke-text">Why did the chicken cross the road?</p>
+            <button onclick="revealJoke()">Tell Me!</button>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <h2>Featured Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Joke Website</p>
+    </footer>
+
+    <!-- JavaScript for Joke -->
+    <script>
+        function revealJoke() {
+            document.getElementById("joke-text").innerText = "Because it wanted to get to the other side!";
+        }
+    </script>
+
+</body>
+</html>
